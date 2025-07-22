@@ -1,0 +1,269 @@
+Script started on 2025-07-22 19:20:59+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="193" LINES="46"]
+[?2004h]0;shaikrrehan91@gitdemo: ~/git_demo[01;32mshaikrrehan91@gitdemo[00m:[01;34m~/git_demo[00m$ git
+git --version
+sudo apt update
+sudo apt install git -y
+git --version
+git
+mkdir git_demo
+cd git_demo
+ls -ltr
+git init
+ls -ltra.git
+git status
+touch file1.txt
+touch file2.txt
+git add .
+git status
+git commit -m "My  first commit"
+git config --flobal user.email shaikrrehan91@gmail.com
+git config --global user.email shaikrrehan91@gmail.com
+git config --global user.name Rehan809
+git commit -m "My  first commit"
+git status
+git remote origin https://github.com/Rehan809/devopsdemo.git
+git remote add  origin https://github.com/Rehan809/devopsdemo.git
+git push
+git push origin master
+git config --global credential.helper cache
+git config --global credential.helper store
+git push origin master
+cd
+mkdir clone  
+mkdir clonerepo
+git status
+mkdir clonerepo
+[7mclonerepo[27m
+[7mls git_demo[27m
+[7mcd git_demo[27m
+[7mtouch file3.txt[27m
+[7mgit add .[27m
+[7mgit commit -m "My second commit"[27m
+[7mgit push origin master[27m
+[7mcd https://github.com/Rehan809/devopsdemo.git [27m
+[7mcd[27m
+[7mcd clonerepo[27m
+[7mcd git_demo[27m
+[7mcd[27m
+[7mcd git_demo[27m[7mgit branch user1[27m[7mgit branch[27m[7mgit checkout user1[27m[7mgit branch[27m[7mgit log[27m[7mgit history[27m[7mgit stash -u[27m[7mls[27m[7mgit stash pop[27m[7mtouch file4.txt[27m[7mgit status[27m[7mgit stash -u[27m[7mgit stash pop[27m[7mgit status[27m[7mgit log[27m[7mgit revert e30cda94f8ec62600e3b869a253b9caafa9911cb[27m[7mgit checkout user1[27m[7mtouch file4.txt[27m[7mgit add .[27m[7mgit commit -m "file 4 created"[27m[7mgit log --graph --pretty=oneline[27m[7mtouch file5.txt[27m[7mgit add .[27m[7mgit commit -m "file 5 created"[27m[7mgit log --graph --pretty=oneline[27m[7mgit checkout master[27m[7mgit log --graph --pretty=oneline[27m[7mgit merge user1 [27m[7mgit branch[27m[7mls -ltr[27m[7mgit rebase master[27m[7mgit log --graph --pretty=oneline[27m[A[A[A[A[A[A[A[A[A[A[A[Aclonerepo
+ls git_demo
+cd git_demo
+touch file3.txt
+git add .
+git commit -m "My second commit"
+git push origin master
+cd https://github.com/Rehan809/devopsdemo.git 
+cd
+cd clonerepo
+cd git_demo
+cd
+cd git_demogit branch user1git branchgit checkout user1git branchgit loggit historygit stash -ulsgit stash poptouch file4.txtgit statusgit stash -ugit stash popgit statusgit loggit revert e30cda94f8ec62600e3b869a253b9caafa9911cbgit checkout user1touch file4.txtgit add .git commit -m "file 4 created"git log --graph --pretty=onelinetouch file5.txtgit add .git commit -m "file 5 created"git log --graph --pretty=onelinegit checkout mastergit log --graph --pretty=onelinegit merge user1 git branchls -ltrgit rebase mastergit log --graph --pretty=oneline
+[?2004lusage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+git version 2.48.1
+[33m0% [Working][0m            Hit:1 http://us-central1.gce.archive.ubuntu.com/ubuntu plucky InRelease
+[33m0% [Connecting to security.ubuntu.com (91.189.91.82)][0m                                                     Hit:2 http://us-central1.gce.archive.ubuntu.com/ubuntu plucky-updates InRelease
+                                                     Hit:3 http://us-central1.gce.archive.ubuntu.com/ubuntu plucky-backports InRelease
+[33m0% [Connecting to security.ubuntu.com (91.189.91.82)][0m                                                     Hit:4 http://security.ubuntu.com/ubuntu plucky-security InRelease
+[33m                                                     0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m20% [Working][0m             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 8%Reading package lists... 8%Reading package lists... 42%Reading package lists... 66%Reading package lists... 66%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1m24 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[0mReading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                git is already the newest version (1:2.48.1-0ubuntu1.1).
+Solving dependencies... 0%Solving dependencies... 10%                            Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 24
+git version 2.48.1
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+mkdir: cannot create directory ‘git_demo’: File exists
+total 0
+-rw-rw-r-- 1 shaikrrehan91 shaikrrehan91 0 Jul 22 19:18 file1.txt
+-rw-rw-r-- 1 shaikrrehan91 shaikrrehan91 0 Jul 22 19:18 file2.txt
+Reinitialized existing Git repository in /home/shaikrrehan91/git_demo/git_demo/.git/
+ls: invalid option -- '.'
+Try 'ls --help' for more information.
+On branch master
+nothing to commit, working tree clean
+On branch master
+nothing to commit, working tree clean
+On branch master
+nothing to commit, working tree clean
+error: unknown option `flobal'
+usage: git config list [<file-option>] [<display-option>] [--includes]
+   or: git config get [<file-option>] [<display-option>] [--includes] [--all] [--regexp] [--value=<value>] [--fixed-value] [--default=<default>] <name>
+   or: git config set [<file-option>] [--type=<type>] [--all] [--value=<value>] [--fixed-value] <name> <value>
+   or: git config unset [<file-option>] [--all] [--value=<value>] [--fixed-value] <name>
+   or: git config rename-section [<file-option>] <old-name> <new-name>
+   or: git config remove-section [<file-option>] <name>
+   or: git config edit [<file-option>]
+   or: git config [<file-option>] --get-colorbool <name> [<stdout-is-tty>]
+
+Config file location
+    --[no-]global         use global config file
+    --[no-]system         use system config file
+    --[no-]local          use repository config file
+    --[no-]worktree       use per-worktree config file
+    -f, --[no-]file <file>
+                          use given config file
+    --[no-]blob <blob-id> read config from given blob object
+
+Action
+    --get                 get value: name [<value-pattern>]
+    --get-all             get all values: key [<value-pattern>]
+    --get-regexp          get values for regexp: name-regex [<value-pattern>]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [<value-pattern>]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [<value-pattern>]
+    --unset-all           remove all matches: name [<value-pattern>]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [<default>]
+    --get-colorbool       find the color setting: slot [<stdout-is-tty>]
+
+Display options
+    -z, --[no-]null       terminate values with NUL byte
+    --[no-]name-only      show variable names only
+    --[no-]show-origin    show origin of config (file, standard input, blob, command line)
+    --[no-]show-scope     show scope of config (worktree, local, global, system, command)
+    --[no-]show-names     show config keys in addition to their values
+
+Type
+    -t, --[no-]type <type>
+                          value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    --[no-]default <value>
+                          with --get, use default value when missing entry
+    --[no-]comment <value>
+                          human-readable comment string (# will be prepended as needed)
+    --[no-]fixed-value    use string equality when comparing values to value pattern
+    --[no-]includes       respect include directives on lookup
+
+On branch master
+nothing to commit, working tree clean
+On branch master
+nothing to commit, working tree clean
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+error: remote origin already exists.
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+To https://github.com/Rehan809/devopsdemo.git
+ [31m! [rejected]       [m master -> master (fetch first)
+[31merror: failed to push some refs to 'https://github.com/Rehan809/devopsdemo.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do not[m
+[33mhint: have locally. This is usually caused by another repository pushing to[m
+[33mhint: the same ref. If you want to 
