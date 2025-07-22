@@ -1,0 +1,88 @@
+    1  git
+    2  git --version
+    3  sudo apt update
+    4  sudo apt install git -y
+    5  git --version
+    6  git
+    7  mkdir git_demo
+    8  cd git_demo
+    9  ls -ltr
+   10  git init
+   11  ls -ltra.git
+   12  git status
+   13  touch file1.txt
+   14  touch file2.txt
+   15  git add .
+   16  git status
+   17  git commit -m "My  first commit"
+   18  git config --flobal user.email shaikrrehan91@gmail.com
+   19  git config --global user.email shaikrrehan91@gmail.com
+   20  git config --global user.name Rehan809
+   21  git commit -m "My  first commit"
+   22  git status
+   23  git remote origin https://github.com/Rehan809/devopsdemo.git
+   24  git remote add  origin https://github.com/Rehan809/devopsdemo.git
+   25  git push
+   26  git push origin master
+   27  git config --global credential.helper cache
+   28  git config --global credential.helper store
+   29  git push origin master
+   30  cd
+   31  mkdir clone  
+   32  mkdir clonerepo
+   33  git status
+   34  mkdir clonerepo
+   35  clonerepo
+   36  ls git_demo
+   37  cd git_demo
+   38  touch file3.txt
+   39  git add .
+   40  git commit -m "My second commit"
+   41  git push origin master
+   42  cd https://github.com/Rehan809/devopsdemo.git 
+   43  cd
+   44  cd clonerepo
+   45  cd git_demo
+   46  cd
+   47  cd git_demo
+   48  git branch user1
+   49  git branch
+   50  git checkout user1
+   51  git branch
+   52  git log
+   53  git history
+   54  git stash -u
+   55  ls
+   56  git stash pop
+   57  touch file4.txt
+   58  git status
+   59  git stash -u
+   60  git stash pop
+   61  git status
+   62  git log
+   63  git revert e30cda94f8ec62600e3b869a253b9caafa9911cb
+   64  git checkout user1
+   65  touch file4.txt
+   66  git add .
+   67  git commit -m "file 4 created"
+   68  git log --graph --pretty=oneline
+   69  touch file5.txt
+   70  git add .
+   71  git commit -m "file 5 created"
+   72  git log --graph --pretty=oneline
+   73  git checkout master
+   74  git log --graph --pretty=oneline
+   75  git merge user1 
+   76  git branch
+   77  ls -ltr
+   78  git rebase master
+   79  git log --graph --pretty=oneline
+   80  gcloud compute ssh git_demo
+   81  rrehan91@gitdemo:~$ gcloud compute ssh git_demo
+   82  Did you mean zone [us-central1-c] for instance: [git_demo] (Y/n)?  y
+   83  ERROR: (gcloud.compute.ssh) Could not fetch resource:
+   84  shaikrrehan91@gitdemo:~$ 
+   85  cd git_demo
+   86  ls -ltr
+   87  git init
+   88  history > commands.txt
